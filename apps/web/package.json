@@ -9,11 +9,11 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@todo/validation": "workspace:*",
+    "@todo/api-client": "workspace:*",
     "next": "16.0.10",
     "react": "19.2.1",
-    "react-dom": "19.2.1",
-    "@todo/validation": "workspace:*",
-    "axios": "catalog:"
+    "react-dom": "19.2.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

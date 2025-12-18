@@ -1,22 +1,20 @@
-import { Injectable } from '@nestjs/common'
-import { randomUUID } from 'crypto'
-import { Todo, CreateTodoSchema } from '@todo/validation'
+import { randomUUID } from 'crypto';
+import { Todo, CreateTodoSchema } from '@todo/validation';
+import { TodoRepository } from './todo.repository';
 
-@Injectable()
 export class TodoService {
-    private todos: Todo[] = []
+  constructor(private readonly repo: TodoRepository) {}
 
-    findAll(): Todo[] {
-        return this.todos
-    }
+  findAll(): Todo[] {
+    return this.repo.findAll();
+  }
 
-    create(data: CreateTodoSchema): Todo {
-        const newTodo: Todo = {
-            id: randomUUID(),
-            ...data
-        }
-        
-        this.todos.push(newTodo)
-        return newTodo
-    }
+  create(data: CreateTodoSchema): Todo {
+    const todo: Todo = {
+      id: randomUUID(),
+      ...data,
+    };
+
+    return this.repo.create(todo);
+  }
 }

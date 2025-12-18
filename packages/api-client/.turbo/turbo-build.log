@@ -1,0 +1,5 @@
+
+
+> @todo/api-client@0.0.1 build /home/diogo/Documentos/dev/monorepo_todolist/packages/api-client
+> tsc -p tsconfig.json
+
