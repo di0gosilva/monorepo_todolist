@@ -1,0 +1,17 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+
+catalog:
+  # =====================
+  # Shared (web + api)
+  # =====================
+  zod: ^3.23.8
+  axios: ^1.6.8
+  date-fns: ^3.6.0
+  uuid: ^9.0.1
+
+  # =====================
+  # Tooling / runtime
+  # =====================
+  tslib: ^2.6.3
