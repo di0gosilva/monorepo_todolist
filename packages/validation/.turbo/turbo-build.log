@@ -1,5 +1,5 @@
 
 
-> @todo/validation@0.0.1 build /home/di0gosilva/dev/todo-workspace/packages/validation
+> @todo/validation@0.0.1 build /home/diogo/Documentos/dev/monorepo_todolist/packages/validation
 > tsc -p tsconfig.json
 
